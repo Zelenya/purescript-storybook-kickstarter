@@ -14,6 +14,8 @@ Storybook is pretty much a fancy build tool. You can edit components and [storie
 
 Note: A Story is an example of a component, it captures a specific rendered state. You could learn more about stories in [Storybook docs](https://storybook.js.org/docs/react/get-started/whats-a-story)
 
+<img width="1344" alt="Screenshot 2022-07-11 at 12 01 46" src="https://user-images.githubusercontent.com/11508062/178240563-b2075876-c314-484e-bf16-5d239c4746ae.png">
+
 You can use is Storybook with any popular JavaScript framework. However in this tutorial we are going to focus on a PureScript project that uses React.
 
 ## Project setup
@@ -155,6 +157,8 @@ npm run storybook
 
 The action should succeed, Storybook should open `http://localhost:6006/` and you should see the stories:
 
+<img width="1116" alt="Screenshot 2022-07-11 at 12 01 07" src="https://user-images.githubusercontent.com/11508062/178240661-d695038a-c64d-4bb1-8048-a04532c1159e.png">
+
 React Player looks good enough. Let's see what else we could do with stories.
 
 ### Using decorators
@@ -187,7 +191,6 @@ uglyBoxDecorator = decorator \story -> pure $ mkBox [ story ]
 Then we add a simple story for the button:
 
 ```
-
 clickMeStylized :: Effect JSX
 clickMeStylized = pure $ simpleButton
   { text: "Click me"
@@ -208,6 +211,8 @@ default = story
 ```
 
 If we run the Storybook: `npm run storybook`, we should see a button in the context:
+
+<img width="1116" alt="Screenshot 2022-07-11 at 12 01 27" src="https://user-images.githubusercontent.com/11508062/178240696-f8cfa52a-7fc2-47a5-b44d-6145415a1018.png">
 
 ## What's next?
 
