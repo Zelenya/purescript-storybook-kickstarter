@@ -1,0 +1,30 @@
+{
+  "name": "purescript-storybook-kickstarter",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "build": "spago build",
+    "build:watch": "spago build --watch",
+    "prestorybook": "spago build",
+    "storybook": "start-storybook -p 6006",
+    "prestart": "npm run build",
+    "start": "parcel serve public/index.html --open",
+    "prebundle": "npm run build",
+    "bundle": "parcel build public/index.html",
+    "test": "spago test"
+  },
+  "dependencies": {
+    "@storybook/react": "^6.5.9",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-player": "^2.9.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.1",
+    "purescript": "^0.14.9",
+    "spago": "^0.20.3"
+  }
+}
