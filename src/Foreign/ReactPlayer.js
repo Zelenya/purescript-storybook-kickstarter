@@ -1,2 +1,1 @@
-const reactPlayer = require('react-player')
-exports.reactPlayer = reactPlayer.default
+export { default as reactPlayer } from "react-player"
